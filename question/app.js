@@ -44,8 +44,59 @@ let playerList = [
 
 console.log(playerList[1].favorites[1]);
 
-// Q5 Q4 で定義した変数 playerList を使用し、John, Bob, Michael の年齢の平均値を計算した結果をコンソールに出力してください。
+// Q5
 let ageList = playerList.map((player) => player.age);
 let ageAvg = ageList.reduce((acc, cur) => acc + cur, 0) / ageList.length;
 
 console.log(ageAvg);
+
+// Q6
+function sayHello() {
+  console.log("Hello");
+}
+
+sayHello();
+
+let sayWorld = () => console.log("World");
+
+sayWorld();
+
+// Q7
+user.birthday = "2000-09-27";
+
+user.sayHello = () => {
+  console.log("Hello!");
+};
+
+user.sayHello();
+
+// Q8
+let calc = {
+  add(x, y) {
+    console.log(x + y);
+  },
+  subtract(x, y) {
+    console.log(x - y);
+  },
+  multiply(x, y) {
+    console.log(x * y);
+  },
+  divide(x, y) {
+    console.log(x / y);
+  },
+};
+
+calc.add(1, 6);
+calc.subtract(20, 10);
+calc.multiply(7, 7);
+calc.divide(40, 8);
+
+// Q9
+function remainder(x, y) {
+  return x % y;
+}
+
+console.log("5 を 3 で割った余りは " + remainder(5, 3) + " です。");
+
+// Q10
+// foo関数のスコープ外からxは参照できないため
