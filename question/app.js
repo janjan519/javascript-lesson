@@ -1,3 +1,4 @@
+// 基礎
 // Q1
 let nickname = "ごっしー";
 let age = 28;
@@ -100,3 +101,45 @@ console.log("5 を 3 で割った余りは " + remainder(5, 3) + " です。");
 
 // Q10
 // foo関数のスコープ外からxは参照できないため
+
+// 応用
+// Q1
+console.log(Math.floor(Math.random() * 10));
+
+// Q2
+setTimeout(() => {
+  console.log("Hello World!");
+}, 3000);
+
+// Q3
+let num = -0.01;
+
+if (num > 0) {
+  console.log("num is greater than 0");
+} else if (num < 0) {
+  console.log("num is less than 0");
+} else {
+  console.log("num is 0");
+}
+
+// Q4
+let numbers = [];
+
+for (i = 0; i < 100; i++) {
+  numbers.push(i);
+}
+
+console.log(numbers);
+
+// Q5
+let mixed = [4, "2", 5, "8", "9", 0, 1];
+
+for (i = 0; i < mixed.length; i++) {
+  if (typeof mixed[i] === "string") {
+    console.log("not number");
+  } else if (mixed[i] % 2 === 0) {
+    console.log("even");
+  } else {
+    console.log("odd");
+  }
+}
