@@ -46,8 +46,8 @@ let playerList = [
 console.log(playerList[1].favorites[1]);
 
 // Q5
-let ageList = playerList.map((player) => player.age);
-let ageAvg = ageList.reduce((acc, cur) => acc + cur, 0) / ageList.length;
+let ageAvg =
+  playerList.reduce((acc, player) => acc + player.age, 0) / playerList.length;
 
 console.log(ageAvg);
 
