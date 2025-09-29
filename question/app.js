@@ -72,20 +72,12 @@ user.sayHello = () => {
 user.sayHello();
 
 // Q8
-let calc = {
-  add(x, y) {
-    console.log(x + y);
-  },
-  subtract(x, y) {
-    console.log(x - y);
-  },
-  multiply(x, y) {
-    console.log(x * y);
-  },
-  divide(x, y) {
-    console.log(x / y);
-  },
-};
+let calc = {};
+
+calc.add = (x, y) => console.log(x + y);
+calc.subtract = (x, y) => console.log(x - y);
+calc.multiply = (x, y) => console.log(x * y);
+calc.divide = (x, y) => console.log(x / y);
 
 calc.add(1, 6);
 calc.subtract(20, 10);
